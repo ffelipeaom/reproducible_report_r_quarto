@@ -1,0 +1,51 @@
+---
+title: "Aula 1"
+author: "Felipe Augusto"
+format: html
+# revealjs # presentation format, html slide
+editor: visual
+lang: pt
+---
+
+## Elementos usados pela turma:
+
+-   figuras
+
+-   gráficos
+
+-   tabelas
+
+-   textos
+
+-   códigos
+
+-   filtros de dados
+
+-   filtro como slicer do excel
+
+-   mapas
+
+-   fórmulas, equaçãões em latex
+
+-   código em python, compilar com engine do jupyter
+
+-   logo
+
+-   cabeçalho
+
+-   paginação
+
+---
+
+```{r}
+library(tidyverse)
+```
+
+## Criando um gráfico
+```{r}
+starwars |>
+  ggplot(aes(x = height, y = mass, color = sex)) +
+  geom_point(na.rm = T) +
+  theme_light()
+```
+
